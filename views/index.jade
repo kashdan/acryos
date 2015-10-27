@@ -5,8 +5,6 @@ block content
   script(type='text/javascript', src='/javascripts/foundation.min.js')
   script(type='text/javascript').
     $(document).foundation();
-  //h1= title
-  //p Shalom #{title} and Welcome to St. John's!
   nav.top-bar(data-topbar='', role='navigation')
     ul.title-area
       li.name
@@ -17,7 +15,6 @@ block content
         a(href='#')
           span Menu
     section.top-bar-section
-      //Right Nav Section
       ul.right
         li.active
           a(href='#') Research team
@@ -28,35 +25,16 @@ block content
               a(href='#') Icebergs in Newfoundland and Labrador
             li.active
               a(href='#') Being a global leader in Arctic Science
-      //Left Nav Section
       ul.left
         li
           a(href='#') Situation analysis
   //.row.full
   .row
-    .small-2.large-4.columns
-    .small-2.large-4.columns
-    .small-2.large-4.columns
-    .sidebar.medium-12.large-3.columns
-      .middle-header
-        h1 Research
-        h2
-          | of Cryosphere
-        //br
-        //| Or I'll Be Sad
-        //a.button.ghost(href='#') Donate
-        a.button.ghost(href='#') Contact
-        .social-header
-          a(href='#')
-            i.fi-social-facebook
-          a(href='#')
-            i.fi-social-medium
-          a(href='#')
-            i.fi-social-rdio
-    .content.medium-12.large-9.columns
+    img(src='http://www.aber.ac.uk/greenland/images/imagery/russell/laser_mark.jpg', alt='slide 1')
+    .content.medium-12.large-12.columns
       h4 Work today
       article.post
-        img.author(alt='person', src='http://www.aber.ac.uk/greenland/images/imagery/russell/laser_mark.jpg')
+        //img.author(alt='person', src='http://www.aber.ac.uk/greenland/images/imagery/russell/laser_mark.jpg')
         h2 Climate change and Greenland Ice Sheet (Western Greenland)
         p.subheader
           | By 
