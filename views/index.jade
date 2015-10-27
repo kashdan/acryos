@@ -1,5 +1,73 @@
 extends layout
 
 block content
-  h1= title
-  p Shalom #{title} and Welcome to St. John's!
+  script(type='text/javascript', src='/javascripts/vendor/jquery.js')
+  script(type='text/javascript', src='/javascripts/foundation.min.js')
+  script(type='text/javascript').
+    $(document).foundation();
+  //h1= title
+  //p Shalom #{title} and Welcome to St. John's!
+  nav.top-bar(data-topbar='', role='navigation')
+    ul.title-area
+      li.name
+        h1
+          a(href='#') #{title}
+      //Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
+      li.toggle-topbar.menu-icon
+        a(href='#')
+          span Menu
+    section.top-bar-section
+      //Right Nav Section
+      ul.right
+        li.active
+          a(href='#') Research team
+        li.has-dropdown
+          a(href='#') Executive Summary
+          ul.dropdown
+            li
+              a(href='#') Icebergs in Newfoundland and Labrador
+            li.active
+              a(href='#') Being a global leader in Arctic Science
+      //Left Nav Section
+      ul.left
+        li
+          a(href='#') Situation analysis
+  //.row.full
+  .row
+    .small-2.large-4.columns
+    .small-2.large-4.columns
+    .small-2.large-4.columns
+    .sidebar.medium-12.large-3.columns
+      .middle-header
+        h1 Research
+        h2
+          | of Cryosphere
+        //br
+        //| Or I'll Be Sad
+        //a.button.ghost(href='#') Donate
+        a.button.ghost(href='#') Contact
+        .social-header
+          a(href='#')
+            i.fi-social-facebook
+          a(href='#')
+            i.fi-social-medium
+          a(href='#')
+            i.fi-social-rdio
+    .content.medium-12.large-9.columns
+      h4 Work today
+      article.post
+        img.author(alt='person', src='http://www.aber.ac.uk/greenland/images/imagery/russell/laser_mark.jpg')
+        h2 Climate change and Greenland Ice Sheet (Western Greenland)
+        p.subheader
+          | By 
+          a(href='http://www.williamcolgan.net/') William Colgan, Ph.D.
+          |  Credit: Sam Doyle
+          //a(href='#')
+          //span.label JavaScript
+          //a(href='#')
+          //span.alert.label jQuery
+        p
+          | GEUS estimated that between 2007 and 2011 the Greenland ice sheet alone, not counting all the peripheral glaciers in Greenland, lost 262 Gt of ice per year. That works out to about 8300 tonnes per second. That means the Greenland ice sheet probably weighs 250,000 tonnes less than when you started reading this report. No wonder we can measure its mass loss by gravitational anomalies. The ice sheet is currently losing mass via both surface runoff (the difference between accumulation and melt) and ice dynamics (the production of icebergs). We estimate that runoff comprised about 61 per cent of the ice sheet’s mass loss, or about 5000 tonnes per second, with iceberg production comprising the remaining 3300 tonnes per second of mass loss. Some big numbers that confirm the Greenland ice sheet is presently raising global mean sea level by about 0.73 mm per year [reports and publications of International Glaciological Society] 
+        a.ghost.button(href='#') Read it ↬
+      h4 Recent study
+      
