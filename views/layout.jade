@@ -7,4 +7,36 @@ html
     link(rel='stylesheet', href='/stylesheets/foundation.css')
     script(type='text/javascript', src='/javascripts/vendor/modernizr.js')
   body
+    script(type='text/javascript', src='/javascripts/foundation.min.js')
+    script(type='text/javascript', src='/javascripts/vendor/jquery.js')
+    script(type='text/javascript').
+      $(document).foundation();
+    nav.top-bar(data-topbar='', role='navigation')
+      ul.title-area
+        li.name
+          h1
+            a(href='/') #{title}
+        //Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
+        li.toggle-topbar.menu-icon
+          a(href='#')
+            span Menu
+      section.top-bar-section
+        ul.right
+          li.active
+            a(href='team') Research team
+          li.has-dropdown
+            a(href='#') Executive Summary
+            ul.dropdown
+              li
+                a(href='#') Icebergs in Newfoundland and Labrador
+              li.active
+                a(href='#') Being a global leader in Arctic Science
+        ul.left
+          li.has-dropdown
+            a(href='#') Situation analysis
+            ul.dropdown
+              li
+                a(href='#') Problems of Navigation in Ice Covered Waters
+              li.active
+                a(href='#') Problems of iceberg scour and coastal erosions
     block content
