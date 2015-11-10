@@ -63,12 +63,12 @@
     top: 50%;
     transform: translateY(85%); } }
 .content img {
-  width: 400px; }
+  /*width: 400px; */ }
 .content img.author {
   float: right;
   border-radius: 50%;
-  height: 48px;
-  width: 48px; }
+  height: 86px;
+  width: 50px; }
 .content h2 {
   margin-top: 1.25rem;
   font-weight: 800; }
