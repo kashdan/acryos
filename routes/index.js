@@ -16,4 +16,9 @@ router.get('/situation', function(req, res, next) {
   res.render('situation', { title: 'Applied Cryospheric Cons.' });
 });
 
+/* GET icebergs page. */
+router.get('/icebergs', function(req, res, next) {
+  res.render('icebergs', { title: 'Applied Cryospheric Cons.' });
+});
+
 module.exports = router;
